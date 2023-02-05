@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    height: 71px;
+    margin-left: 135px;
+    padding-top: 20px;
+    background-color:#14164A;
+}
+.logo {
+    font-family: 'Jaldi', sans-serif;
+    font-size: 24px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFEFE;
+}
+.line-before {
+    display: inline-block;
+    background: #F8D937C9;
+    height: 1px;
+    width: 90px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.line-after {
+    display: inline-block;
+    background: #F8D937C9;
+    height: 1px;
+    width: 90px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+.nav-bar a {
+    font-family: 'Jaldi', sans-serif;
+    font-size: 14.5px;
+    text-decoration: none;
+    color: #FFFEFE;
+}
+.nav-bar a:hover {
+    color:#F8D937C9;
+}
+
+.single-search{
+    background-color: #FFFEFE;
+    width: 105px;
+    height: 38px;
+    border-radius: 30px;
+}
+  
+.single-search input {
+    all: unset;
+    font-family: 'Jaldi', sans-serif;
+    font: 13px;
+    height: 100%;
+    width: 100%;
+    padding: 0px 10px;
+}
+  
+::placeholder {
+    color: #000;
+    opacity: 0.8; 
+}
+
+
+
+
+
+.wrap {
+    width:80%;
+    margin:10px 160px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.side-panel {
+    width:275px;
+    height:530px;
+    background-color: #FFFEFE;
+    float:left;
+}
+
+.side-panel img {
+    width: 275px;
+    height: 379px;
+}
+
+.rating {
+    display: flex;
+    font-family: 'Jaldi', sans-serif;
+    font-size: 15px;
+    margin-left: 5px;
+    gap: 15px;
+}
+
+.rating a {
+    text-decoration: none;
+}
+
+.checked {
+    color: orange;
+}
+
+.unchecked {
+    color: rgb(63, 63, 63);
+}
+
+button {
+    font-family: 'Jaldi', sans-serif;
+    font-size: 19px;
+    width: 166px;
+    height: 47px;
+    border: none;
+    border-radius: 20px;
+    background: #F8D937C9;
+    margin-top: 15px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #f8dd57c9 ;
+}
+button i {
+    color: #FFFEFE;
+}
+
+.main-content {
+    width:750px;
+    height:530px;
+    background-color: #FFFEFE;
+    padding-left: 50px;
+    float:right;
+}
+
+.main-content h1 {
+    display: flex;
+    text-align: justify;
+    padding-left: 40px;
+}
+
+.author {
+    font-family: 'Jaldi', sans-serif;
+    font-size: 15px;
+    padding-left: 40px;
+}
+
+.book-info {
+    text-align: right;
+    font-family: 'Jaldi', sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+    margin-top: -15px;
+    margin-right: 150px;
+}
+
+.description {
+    font-family: 'Jaldi', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    padding-left: 15px;
+    margin-top: 30px;
+}
+
+.clear {
+    clear:both;
+}
+
+.text {
+  box-sizing: border-box;
+  float: right;
+  margin-right: -90%;
+  padding: 1em;
+  width: 105%;
+}
+
+.text {
+  border: 3px solid pink;
+}
+
+h1 {
+    font-family: 'Jaldi', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 39px;
+}
+
+h2 {
+    font-family: 'Jaldi', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+h2 p {
+    font-family: 'Jaldi', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    text-align: right;
+}
+
+.text p {
+    font-family: 'Jaldi', sans-serif;
+    font-size: 15px;
+}

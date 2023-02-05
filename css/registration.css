@@ -1,0 +1,163 @@
+* {
+    margin:0;
+
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100%;
+}
+  
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    height: 71px;
+    margin-left: 135px;
+    padding-top: 20px;
+    background-color:#14164A;
+}
+.logo {
+    font-family: 'Jaldi', sans-serif;
+    font-size: 24px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFEFE;
+}
+.line-before {
+    display: inline-block;
+    background: #F8D937C9;
+    height: 1px;
+    width: 90px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.line-after {
+    display: inline-block;
+    background: #F8D937C9;
+    height: 1px;
+    width: 90px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+.nav-bar a {
+    font-family: 'Jaldi', sans-serif;
+    font-size: 14.5px;
+    text-decoration: none;
+    color: #FFFEFE;
+}
+.nav-bar a:hover {
+    color:#F8D937C9;
+}
+.single-search{
+    background-color: #FFFEFE;
+    width: 105px;
+    height: 38px;
+    border-radius: 30px;
+}
+  
+.single-search input {
+    all: unset;
+    font-family: 'Jaldi', sans-serif;
+    font: 13px;
+    height: 100%;
+    width: 100%;
+    padding: 0px 10px;
+}
+  
+::placeholder {
+    color: #000;
+    opacity: 0.8; 
+}
+
+
+.registration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.registration h1 {
+    font-family: 'Javanese Text';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 54px;
+    text-align: center;
+}
+
+form {
+    width: 40%;
+    padding: 20px;
+    background: #fff;
+}
+
+fieldset {
+    border: none;
+}
+
+.contact-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact-item .item {
+    
+    width: calc(50% - 8px);
+}
+
+.item label {
+    font-family: 'Jaldi', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.item p {
+    font-family: 'Jaldi', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+input, select, textarea {
+    margin-bottom: 5px;
+    border: 1px solid #E7E5E5E8;
+}
+input {
+    width: calc(100% - 10px);
+    padding: 5px;
+ }
+textarea {
+    width: calc(100% - 12px);
+    padding: 5px;
+    resize: none;
+}
+
+.item {
+    position: relative;
+    margin: 10px 0;
+}
+
+.item span {
+    color: red;
+}
+  
+button {
+    font-family: 'Jaldi', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 10px;
+    width: 85px;
+    height: 34px;
+    border: none;
+    background:  #E7E5E5E8;
+    color: #000;
+    cursor: pointer;
+    }
+button:hover {
+    background:  #a3c2c2;
+}
+   
