@@ -1,123 +1,161 @@
 * {
-    margin:0;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-html, body {
-    min-height: 100%;
+.container {
+    width: 840px;
+    margin: auto;
 }
-  
-.nav-bar {
+
+.navbar {
     display: flex;
     justify-content: space-around;
-    width: 80%;
+    width: 840px;
     height: 71px;
-    margin-left: 135px;
-    padding-top: 20px;
-    background-color:#14164A;
+    background: #14164A;
 }
+
+.links {
+    padding-top: 23px;
+}
+
+.links a{
+    font-family: 'Jaldi';
+    font-size: 14.5px;
+    font-weight: 400;
+    color: #FFFEFE;
+    text-decoration: none;
+    margin: 5px;
+}
+
 .logo {
+    margin-left: 12px;
+    padding-top: 15px;
+}
+
+.logo h1 {
     font-family: 'Jaldi', sans-serif;
     font-size: 24px;
-    line-height: 20px;
+    font-weight: 400;
+    color: #FFFEFE;
+}
+
+.logo h2 {
+    font-family: 'Jaldi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px; 
+    color: #F5F5F5;
     text-align: center;
-    text-transform: uppercase;
-    color: #FFFEFE;
-}
-.line-before {
-    display: inline-block;
-    background: #F8D937C9;
-    height: 1px;
-    width: 90px;
-    margin-right: 5px;
-    vertical-align: middle;
-}
-.line-after {
-    display: inline-block;
-    background: #F8D937C9;
-    height: 1px;
-    width: 90px;
-    margin-left: 5px;
-    vertical-align: middle;
-}
-.nav-bar a {
-    font-family: 'Jaldi', sans-serif;
-    font-size: 14.5px;
-    text-decoration: none;
-    color: #FFFEFE;
-}
-.nav-bar a:hover {
-    color:#F8D937C9;
+    margin-top: -15px;
+    display: flex;
+}     
+
+.logo h2:before, .logo h2:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid #EECC1C;
+  margin: auto;
 }
 
-.single-search{
-    background-color: #FFFEFE;
+.search-box-container form {
+    display:flex;
+    align-items:center;
+    padding-top: 15px;
+}
+
+.search-box-container input {
     width: 105px;
-    height: 38px;
+    height: 38px;    
+    background: #FFFEFE;
+    border: 1px solid #14164A;
     border-radius: 30px;
+    padding: 5px 20px 5px 5px;
 }
-  
-.single-search input {
-    all: unset;
-    font-family: 'Jaldi', sans-serif;
-    font: 13px;
-    height: 100%;
-    width: 100%;
-    padding: 0px 10px;
-}
-  
-::placeholder {
+
+.search-box-container form i {
+    position: absolute;
+    margin-left: 85px;
     color: #000;
-    opacity: 0.8; 
-}
-  
- 
-
-
-
-
-
-
-.form-wrapper {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-}
-
-  
-.form-wrapper #search {
-    width: 692px;
-    height: 30px;
-}
-  
-  .form-wrapper #submit {
-    width: 63px;
-    height: 30px;
-    background-color: #676666FC;
-    border: none;
+    font-size: 12px;
     cursor: pointer;
-  }
+}
 
-  .links a {
+.search-box-container ::placeholder {
+    color: #000;
+    opacity: 0.8;
+}
+
+.toggle-btn {
     display: flex;
+    color: #FFFEFE;
+}
+
+.toggle-btn i {
+    display: none;
+}
+
+.wrapper {
+    width: 840px;
+    height: 494px;
+    background-color: #FFFEFE;
+}
+
+.filter-bar {
+    margin-left: 72px;
+    padding-top: 35px;
+    
+}
+
+.filter-bar .input {
     font-family: 'Jaldi', sans-serif;
     font-size: 13px;    
-    margin-top: 20px;
-    margin-left: 22%;
-    color: #5359EF;
+    background: #E7E5E5E8;
+    border: 1px solid #B8B5B5FC;
+    width: 629px;
+    height: 30px;
+    padding-left: 10px;
+}
 
+.filter-bar .input::placeholder {
+    color: #000;
+    opacity: 0.8;
+}
+
+.filter-bar .input:focus {
+    outline: none;
+}
+
+.filter-bar .filter {
+    font-family: 'Jaldi', sans-serif;
+    font-size: 13px;
+    background: #676666FC;
+    border: none;
+    width: 63px;
+    height: 30px;
+    margin-left: -4px;
+    cursor: pointer;
+}
+
+.wrapper .links a {
+    display: flex;
+    font-family: 'Jaldi', sans-serif;
+    font-size: 13px;       
+    color: #5359EF;
+    text-decoration: underline;
+    margin-left:  67px; 
 }
 
 .row-1 {
     display: flex;
-    margin-top: 20px;
-    margin-left: 19%;
+    margin-left: 30px;
 }
 
 .column {
-    width: 11%;
     margin-top: 117px;
-    margin-left: 40px;
+    margin-left: 29px;
 }
 
 .column img {
@@ -129,7 +167,119 @@ html, body {
     float: right;
     font-family: 'Jaldi', sans-serif;
     font-size: 13px;
-    margin-top: 10px;
-    margin-right: 22%;
+    margin-right: 64px;
+    margin-top: -4px;
 
+}
+  
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        width: 760px;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        width: 760px;
+    }
+
+    .links a {
+        display: none;
+    }
+
+    .search-box-container {
+        display: none;
+    }
+
+    .toggle-btn {
+        font-size: 20px;
+        padding-top: 25px;
+        padding-right:  10px;
+        gap: 10px;
+        cursor: pointer;
+    }
+        
+    .toggle-btn i {
+        display: block;
+    }
+
+    .toggle-btn i:hover {
+        color: #EECC1C;
+    }
+
+    .wrapper {
+        width: 760px;
+    }
+
+    .filter-bar .input {  
+        width: 500px;
+        margin-left: 30px;
+    }
+
+    .row-1 {
+        margin-left: -6px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        width: 375px;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        width: 375px;
+        height: 71px;
+    }
+
+    .links a {
+        display: none;
+    }
+    
+    .logo h1 {
+        font-size: 20px;
+    }
+    
+    .logo h2 {
+        font-size: 11px; 
+    }     
+
+    .search-box-container {
+        display: none;
+    }
+
+    .toggle-btn {
+        font-size: 20px;
+        padding-top: 25px;
+        padding-right: 10px;
+        gap: 10px;
+        cursor: pointer;
+    }
+        
+    .toggle-btn i {
+        display: block;
+    }
+
+    .toggle-btn i:hover {
+        color: #EECC1C;
+    }
+
+    .wrapper {
+        width: 375px;
+    }
+
+    .filter-bar .input {  
+        width: 200px;
+    }
+
+    .row-1 {
+        display: block;
+        margin-left: 100px;
+    }
+
+    .column img {
+        margin-top: -60px;
+    }
 }
